@@ -1,0 +1,68 @@
+1)Ans:-
+
+      list=[]
+i=0
+n=int(input("enter the size of list: "))
+while i<n:
+    list.append(int(input('enter element: ')))
+    i+=1
+print(list)
+
+
+2)Ans:-
+
+      list=["book","pencil","pen"]
+list += ["google","apple","facebook","microsoft","tesla"]
+print(list)
+
+3)Ans:-
+
+
+      list=[1,2,3,4,1,4,5,2,3]
+def countX(lst,x):
+    count=0
+    for element in list:
+        if(element == x):
+            count=count+1
+    return count
+val=countX(list,3)
+print(val)
+
+4)Ans:-
+
+      list=[2,7,3,9,5,6,7]
+list.sort()
+print(list)
+
+
+5)Ans:-
+
+     A=[15,17,20,23]
+B=[2,5,8,13]
+C=A+B
+C.sort()
+print(C)
+
+6)Ans:-
+
+      from collections import deque
+# stack implementation starts
+
+print("stack implementation: ")
+stack=["apple","mango","orange"]
+print(stack)
+stack.append("grapes")
+print(stack)
+stack.pop()
+print(stack)
+
+# stack implementation ends
+print()
+print()
+print("queue implementation:")
+queue=deque(["ram","rom","computer"])
+print(queue)
+queue.append("desktop")
+print(queue)
+queue.popleft()
+print(queue)
